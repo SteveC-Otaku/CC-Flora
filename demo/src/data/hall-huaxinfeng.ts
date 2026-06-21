@@ -9,6 +9,8 @@ export type Piece = {
   accent: string;
 };
 
+const assetBase = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const hallMeta = {
   slug: "huaxinfeng",
   titleEn: "Huaxinfeng Collection",
@@ -25,7 +27,7 @@ export const pieces: Piece[] = [
     description:
       "Layered blush peonies gathered at first light. A single-edition spring specimen presented under museum glass — petals like porcelain, scent like rain on stone.",
     priceAud: 280,
-    image: "/assets/pieces/piece-0.jpg",
+    image: `${assetBase}/assets/pieces/piece-0.jpg`,
     accent: "#e8c4c4",
   },
   {
@@ -36,7 +38,7 @@ export const pieces: Piece[] = [
     description:
       "Forty-seven ranunculus stems in a single chromatic field. The collection celebrates texture over variety — each curl of petal catches the vitrine light.",
     priceAud: 320,
-    image: "/assets/pieces/piece-1.jpg",
+    image: `${assetBase}/assets/pieces/piece-1.jpg`,
     accent: "#f4a896",
   },
   {
@@ -47,7 +49,7 @@ export const pieces: Piece[] = [
     description:
       "Garden roses selected for their slow unfurl. Displayed as a solitary archive piece — the way a gallery might hold one manuscript under glass.",
     priceAud: 395,
-    image: "/assets/pieces/piece-2.jpg",
+    image: `${assetBase}/assets/pieces/piece-2.jpg`,
     accent: "#c97888",
   },
   {
@@ -58,7 +60,7 @@ export const pieces: Piece[] = [
     description:
       "Phalaenopsis arranged on a single meridian line. Negative space above and below — the composition breathes the way a curator leaves wall space around a painting.",
     priceAud: 450,
-    image: "/assets/pieces/piece-3.jpg",
+    image: `${assetBase}/assets/pieces/piece-3.jpg`,
     accent: "#d4c4e8",
   },
   {
@@ -69,7 +71,7 @@ export const pieces: Piece[] = [
     description:
       "An off-season anemone pairing — white and ink. The final piece in this rotation, reserved for collectors who arrive when the gallery is nearly empty.",
     priceAud: 365,
-    image: "/assets/pieces/piece-4.jpg",
+    image: `${assetBase}/assets/pieces/piece-4.jpg`,
     accent: "#f0ebe3",
   },
 ];
