@@ -1,0 +1,20 @@
+# dependencies & build
+demo/node_modules/
+demo/.next/
+demo/out/
+demo/build/
+
+# env & secrets
+.env
+.env.*
+demo/.env*
+
+# debug & misc
+*.log
+.DS_Store
+*.pem
+demo/*.tsbuildinfo
+
+# IDE
+.idea/
+.vscode/
